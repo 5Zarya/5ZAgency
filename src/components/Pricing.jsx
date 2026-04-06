@@ -3,46 +3,72 @@ import { useNavigate } from "react-router-dom";
 
 export default function Pricing() {
   const plans = [
-    {
-      name: "Basic",
-      price: "Rp 300K",
-      desc: "Cocok untuk personal / UMKM",
-      features: [
-        "1 Landing Page",
-        "Responsive Design",
-        "Basic Animation",
-        "Fast Loading",
-      ],
-      highlight: false,
-    },
-    {
-      name: "Pro",
-      price: "Rp 1.3JT",
-      desc: "🔥 Paling banyak dipilih client",
-      features: [
-        "Up to 5 Pages",
-        "System Login",
-        "Modern UI/UX",
-        "Advanced Animation",
-        "SEO Optimization",
-      ],
-      highlight: true,
-      badge: "MOST POPULAR",
-    },
-    {
-      name: "Premium",
-      price: "Custom",
-      desc: "Untuk bisnis & startup serius",
-      features: [
-        "Unlimited Pages",
-        "Custom Web App",
-        "Database & Backend",
-        "Full Support",
-        "All Everything Web App"
-      ],
-      highlight: false,
-    },
-  ];
+
+  {
+    name: "Basic",
+
+    price: "Rp 300.000",
+
+    desc: "Cocok untuk personal, UMKM, dan bisnis yang baru mulai online",
+
+    features: [
+      "1 Halaman Website (Landing Page)",
+      "Desain Modern & Responsive",
+      "Animasi Dasar",
+      "Integrasi WhatsApp",
+      "Form Kontak",
+      "Gratis Revisi 2x",
+      "Waktu Pengerjaan 2–4 Hari"
+    ],
+
+    highlight: false,
+  },
+
+  {
+    name: "Pro",
+
+    price: "Rp 1.300.000",
+
+    desc: "🔥 Paket paling populer untuk bisnis yang ingin berkembang",
+
+    features: [
+      "Hingga 5 Halaman Website",
+      "Desain UI/UX Modern",
+      "Animasi Profesional",
+      "Optimasi SEO Dasar",
+      "Integrasi WhatsApp & Sosial Media",
+      "Form Dinamis",
+      "Gratis Revisi 4x",
+      "Waktu Pengerjaan 5–10 Hari"
+    ],
+
+    highlight: true,
+
+    badge: "PALING POPULER",
+  },
+
+  {
+    name: "Premium",
+
+    price: "Custom",
+
+    desc: "Untuk sistem website kompleks dan kebutuhan khusus website",
+
+    features: [
+      "Custom Design Sesuai Kebutuhan",
+      "Database & Backend System",
+      "Dashboard Admin",
+      "Login & Authentication",
+      "Web Application / Sistem Khusus",
+      "API Integration (Opsional)",
+      "Support & Maintenance",
+      "Estimasi Harga Berdasarkan Fitur"
+    ],
+
+    highlight: false,
+  },
+
+];
 
   const navigate = useNavigate();
   return (
@@ -87,7 +113,7 @@ export default function Pricing() {
     navigate("/contact");
   }}
 >
-  Order Now 🚀
+  Konsultasi Sekarang 🚀
 </span>
 
             <div className="pricing-glow"></div>

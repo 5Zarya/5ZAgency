@@ -14,25 +14,26 @@ export default function Hero() {
       {/* Content */}
       <div className="hero-content">
 
-        <motion.h1
-          initial={{ opacity: 0, y: 80 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="hero-title"
-        >
-          Build The Future <br />
-          <span>With 5Z AI</span>
-        </motion.h1>
+  <motion.h1
+    initial={{ opacity: 0, y: 80 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="hero-title"
+  >
+    Bangun Website <br />
+    <span>Modern & Berteknologi</span>
+  </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          className="hero-subtitle"
-        >
-          Website modern, cepat, cinematic, dan berteknologi tinggi
-          untuk bisnis & personal branding.
-        </motion.p>
+  <motion.p
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.5, duration: 1 }}
+    className="hero-subtitle"
+  >
+    Website cepat, modern, dan berteknologi tinggi  
+    untuk meningkatkan kredibilitas bisnis Anda  
+    dan menarik lebih banyak pelanggan.
+  </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}

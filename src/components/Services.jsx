@@ -28,22 +28,47 @@ const services = [
 
 // FAQ
 const faqs = [
+
   {
-    q: "Berapa lama pembuatan website?",
-    a: "Sekitar 3–10 hari tergantung kompleksitas dan revisi.",
+    q: "Berapa lama waktu pembuatan website?",
+    a: "Waktu pengerjaan biasanya antara 3 hingga 10 hari kerja, tergantung tingkat kompleksitas fitur dan jumlah revisi. Untuk website sederhana bisa selesai lebih cepat, sedangkan website dengan sistem khusus membutuhkan waktu tambahan."
   },
+
   {
-    q: "Apakah bisa custom design?",
-    a: "Ya, semua design bisa disesuaikan dengan kebutuhan brand kamu.",
+    q: "Apakah desain bisa disesuaikan dengan brand saya?",
+    a: "Ya, semua desain dibuat secara custom sesuai kebutuhan brand Anda. Mulai dari warna, layout, hingga tampilan visual akan disesuaikan agar selaras dengan identitas bisnis Anda."
   },
+
   {
-    q: "Apakah dapat revisi?",
-    a: "Tentu, revisi disediakan agar hasil sesuai keinginan kamu.",
+    q: "Apakah saya mendapatkan revisi?",
+    a: "Tentu. Setiap paket sudah termasuk revisi sesuai ketentuan paket. Revisi dilakukan agar hasil akhir benar-benar sesuai dengan kebutuhan dan ekspektasi Anda."
   },
+
   {
-    q: "Apakah mobile friendly?",
-    a: "Semua website sudah responsive di semua device.",
+    q: "Apakah website bisa diakses di HP dan tablet?",
+    a: "Ya. Semua website yang dibuat sudah responsive dan dioptimalkan untuk berbagai perangkat seperti smartphone, tablet, dan desktop."
   },
+
+  {
+    q: "Apakah ada garansi setelah website selesai?",
+    a: "Ya, kami memberikan garansi perbaikan bug selama 7–14 hari setelah website selesai. Jika terdapat error atau kendala teknis, akan diperbaiki tanpa biaya tambahan."
+  },
+
+  {
+    q: "Apakah website bisa dikembangkan di masa depan?",
+    a: "Bisa. Website dibuat dengan struktur yang fleksibel sehingga dapat ditambahkan fitur baru seperti sistem login, dashboard, atau integrasi API di kemudian hari."
+  },
+
+  {
+    q: "Apakah saya akan mendapatkan source code website?",
+    a: "Ya, setelah project selesai dan pembayaran lunas, Anda akan mendapatkan akses penuh ke website dan source code."
+  },
+
+  {
+    q: "Apakah bisa membantu upload ke hosting?",
+    a: "Ya, kami juga membantu proses deploy ke hosting atau domain agar website Anda bisa langsung online dan siap digunakan."
+  }
+
 ];
 
 // 🔥 FAQ COMPONENT

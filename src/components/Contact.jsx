@@ -3,35 +3,67 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   const [form, setForm] = useState({
-    name: "",
-    service: "Landing Page",
-    message: "",
-  });
+  name: "",
+  service: "Basic",
+  message: "",
+});
+
+// 🔥 placeholder dinamis
+const [messagePlaceholder, setMessagePlaceholder] = useState(
+  "Contoh: Saya ingin membuat landing page untuk bisnis saya..."
+);
 
   const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const { name, value } = e.target;
+
+  // Update form value
+  setForm({
+    ...form,
+    [name]: value,
+  });
+
+  // 🔥 Update placeholder berdasarkan paket
+  if (name === "service") {
+
+    if (value === "Basic") {
+      setMessagePlaceholder(
+        "Contoh: Saya ingin membuat landing page untuk bisnis saya."
+      );
+    }
+
+    if (value === "Pro") {
+      setMessagePlaceholder(
+        "Contoh: Saya ingin membuat website bisnis dengan sistem login dan beberapa halaman seperti Home, About, dan Contact."
+      );
+    }
+
+    if (value === "Premium") {
+      setMessagePlaceholder(
+        "Contoh: Saya ingin membuat website custom dengan fitur login, database, atau sistem khusus."
+      );
+    }
+
+  }
+};
 
   const handleWhatsApp = () => {
-    const phone = "6287743903013";
+  const phone = "6287743903013";
 
-    const text = `Halo 5Z Agency 👋
-Saya ${form.name || "-"}
+  const text = `Halo 5Z 👋
+Nama saya ${form.name || "-"}
 
-Saya tertarik dengan:
+Saya tertarik dengan paket:
 ${form.service}
 
-Detail:
+Kebutuhan saya:
 ${form.message || "-"}
 
 Mohon info lebih lanjut ya 🚀`;
 
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
-    window.open(url, "_blank");
-  };
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+  window.open(url, "_blank");
+};
 
   return (
     <section className="contact-section">
@@ -58,18 +90,33 @@ Mohon info lebih lanjut ya 🚀`;
           onChange={handleChange}
         />
 
-        <select name="service" onChange={handleChange}>
-          <option>Landing Page</option>
-          <option>Company Profile</option>
-          <option>Web App</option>
-        </select>
+        <select
+  name="service"
+  value={form.service}
+  onChange={handleChange}
+>
+
+  <option value="Basic">
+    Paket Basic (Landing Page)
+  </option>
+
+  <option value="Pro">
+    Paket Pro (Website Bisnis)
+  </option>
+
+  <option value="Premium">
+    Paket Custom / Web App
+  </option>
+
+</select>
 
         <textarea
-          name="message"
-          placeholder="Ceritakan kebutuhan kamu..."
-          rows="4"
-          onChange={handleChange}
-        />
+  name="message"
+  placeholder={messagePlaceholder}
+  rows="4"
+  value={form.message}
+  onChange={handleChange}
+/>
 
         <button onClick={handleWhatsApp} className="btn-contact">
           🚀 Mulai Project Sekarang

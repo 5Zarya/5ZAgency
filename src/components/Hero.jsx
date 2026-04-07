@@ -15,25 +15,25 @@ export default function Hero() {
       <div className="hero-content">
 
   <motion.h1
-    initial={{ opacity: 0, y: 80 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className="hero-title"
-  >
-    Bangun Website <br />
-    <span>Modern & Berteknologi</span>
-  </motion.h1>
+  initial={{ opacity: 0, y: 80 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  className="hero-title"
+>
+  Build Powerful Websites <br />
+  <span>That Elevate Your Brand</span>
+</motion.h1>
 
   <motion.p
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.5, duration: 1 }}
-    className="hero-subtitle"
-  >
-    Website cepat, modern, dan berteknologi tinggi  
-    untuk meningkatkan kredibilitas bisnis Anda  
-    dan menarik lebih banyak pelanggan.
-  </motion.p>
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.5, duration: 1 }}
+  className="hero-subtitle"
+>
+  Kami membantu Anda membangun website modern, cepat, dan berkelas  
+  yang meningkatkan kepercayaan pelanggan, memperkuat branding,  
+  serta membantu bisnis Anda tampil lebih profesional di dunia digital.
+</motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}

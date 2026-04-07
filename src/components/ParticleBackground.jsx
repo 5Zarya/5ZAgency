@@ -11,7 +11,7 @@ export default function ParticleBackground() {
     let mouse = { x: null, y: null };
     let scrollY = 0;
 
-    const PARTICLE_COUNT = 130;
+    const PARTICLE_COUNT = 75;
 
     // 🔥 RESIZE
     const resize = () => {
@@ -90,9 +90,9 @@ export default function ParticleBackground() {
           const q = particles[j];
           const dist = Math.hypot(p.x - q.x, p.y - q.y);
 
-          if (dist < 130) {
+          if (dist < 75) {
             ctx.strokeStyle = `hsla(${hue}, 100%, 70%, ${
-              1 - dist / 130
+              1 - dist / 75
             })`;
             ctx.lineWidth = 0.7;
             ctx.beginPath();

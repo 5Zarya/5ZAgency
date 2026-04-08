@@ -20,8 +20,7 @@ export default function Hero() {
   transition={{ duration: 1 }}
   className="hero-title"
 >
-  Build Powerful Websites <br />
-  <span>That Elevate Your Brand</span>
+  Build Digital Websites <br />
 </motion.h1>
 
   <motion.p
@@ -30,7 +29,7 @@ export default function Hero() {
   transition={{ delay: 0.5, duration: 1 }}
   className="hero-subtitle"
 >
-  Kami membantu Anda membangun website modern, cepat, dan berkelas  
+  Bersama 5Z Agency, Kami membantu Anda membangun website modern, cepat, dan berkelas  
   yang meningkatkan kepercayaan pelanggan, memperkuat branding,  
   serta membantu bisnis Anda tampil lebih profesional di dunia digital.
 </motion.p>

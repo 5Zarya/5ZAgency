@@ -52,7 +52,7 @@ export default function LoaderOne({ onFinish }) {
 
         {/* LOGO */}
         <h1 className="loader-title">
-          5Z<span> AI</span>
+          5Z Agency
         </h1>
 
         {/* RING LOADER */}
